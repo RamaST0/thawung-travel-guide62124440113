@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 สถานที่ท่องเที่ยวอำเภอท่าวุ้ง จังหวัดลพบุรี | Modern Travel Blog</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="คู่มือท่องเที่ยว 7 สถานที่ท่องเที่ยวอำเภอท่าวุ้ง จังหวัดลพบุรี สัมผัสประวัติศาสตร์ วัดโบราณริมน้ำบางขาม และตลาดชุมชนอันแสนอบอุ่น">
+  <meta name="keywords" content="ท่าวุ้ง, ลพบุรี, ท่องเที่ยวลพบุรี, วัดไลย์, วัดมุจลินท์, วัดเขาสมอคอน, วัดถ้ำตะโก, สะพานแดงท่าวุ้ง, ตลาดสดเทศบาลท่าวุ้ง, ที่ว่าอำเภอโพหวี">
+  <meta property="og:title" content="7 สถานที่ท่องเที่ยวอำเภอท่าวุ้ง จังหวัดลพบุรี">
+  <meta property="og:description" content="เที่ยวท่าวุ้ง สัมผัสวัฒนธรรม ริมน้ำบางขาม ประวัติศาสตร์ และของอร่อย">
+  
+  <!-- Google Fonts: Prompt & Kanit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Prompt', 'sans-serif'],
+            display: ['Kanit', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            },
+            nature: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header id="main-navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-4 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-sky-600 via-sky-500 to-emerald-400 flex items-center justify-center text-white shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div>
+          <span class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 group-hover:text-sky-600 transition-colors">
+            เที่ยวท่าวุ้ง <span class="text-sky-600 text-sm font-normal">| ลพบุรี</span>
+          </span>
+          <span class="block text-[10px] text-slate-600 tracking-wider font-semibold uppercase -mt-1">
+            Tha Wung Travel Guide
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-1 bg-white/70 backdrop-blur-md p-1.5 rounded-full border border-slate-200/60 shadow-sm text-sm font-medium">
+        <a href="#hero" class="px-4 py-1.5 rounded-full text-slate-700 hover:text-sky-600 hover:bg-slate-100/70 transition">หน้าแรก</a>
+        <a href="#attractions" class="px-4 py-1.5 rounded-full text-slate-700 hover:text-sky-600 hover:bg-slate-100/70 transition">7 สถานที่ไฮไลต์</a>
+        <a href="#itinerary" class="px-4 py-1.5 rounded-full text-slate-700 hover:text-sky-600 hover:bg-slate-100/70 transition">ทริป 1 วัน</a>
+        <a href="#travel-info" class="px-4 py-1.5 rounded-full text-slate-700 hover:text-sky-600 hover:bg-slate-100/70 transition">การเดินทาง</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Bookmark Favorites Toggle -->
+        <button 
+          id="bookmark-toggle-btn" 
+          class="relative px-3.5 py-2 rounded-2xl bg-white/90 hover:bg-white text-slate-700 border border-slate-200 shadow-sm flex items-center gap-2 text-sm font-medium transition hover:shadow group"
+          title="รายการที่บันทึกไว้"
+        >
+          <svg class="w-4 h-4 text-rose-500 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+          </svg>
+          <span class="hidden sm:inline">ที่บันทึกไว้</span>
+          <span id="bookmark-counter" class="hidden px-2 py-0.5 text-xs font-bold rounded-full bg-rose-500 text-white">0</span>
+        </button>
+
+        <!-- CTA Go to Grid -->
+        <a 
+          href="#attractions" 
+          class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-sky-600 hover:bg-sky-700 text-white font-medium text-sm shadow-md shadow-sky-600/20 transition-all hover:scale-[1.02]"
+        >
+          <span>เริ่มสำรวจ</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+    
+    <!-- Background Banner Image with Parallax Vibe & Gradient Overlays -->
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img 
+        src="images/hero-banner.jpg" 
+        alt="สะพานแดงท่าวุ้งประดับไฟยามค่ำคืน อำเภอท่าวุ้ง จังหวัดลพบุรี" 
+        class="w-full h-full object-cover object-center hero-bg-anim filter brightness-[0.82]"
+      />
+      <!-- Gradient Overlays: Dark Blue & Nature Emerald accents -->
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-900/40"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-sky-950/40 via-transparent to-emerald-950/40"></div>
+      
+      <!-- Subtle Decorative Grid -->
+      <div class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
+    </div>
+
+    <!-- Hero Content Container -->
+    <div class="relative z-10 max-w-5xl mx-auto text-center text-white space-y-6 sm:space-y-8 mt-6">
+      
+      <!-- Welcome Pill Tag -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-xs sm:text-sm font-medium tracking-wide text-sky-200 shadow-lg">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span>สัมผัสมนต์เสน่ห์ลุ่มน้ำบางขามและประวัติศาสตร์เมืองละโว้</span>
+      </div>
+
+      <!-- Main Headline as requested in prompt -->
+      <h1 class="font-display font-extrabold text-3xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight leading-[1.15] text-white drop-shadow-xl">
+        7 สถานที่ท่องเที่ยว<br>
+        <span class="bg-gradient-to-r from-sky-300 via-teal-200 to-emerald-300 bg-clip-text text-transparent">
+          อำเภอท่าวุ้ง จังหวัดลพบุรี
+        </span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-slate-200/90 font-light leading-relaxed">
+        เปิดประตูสู่วิถีชีวิตริมสายน้ำ สักการะพระพุทธรูปศักดิ์สิทธิ์ร้อยปี ยลงานปูนปั้นชั้นครู 
+        และสัมผัสความอบอุ่นของตลาดชุมชนในบรรยากาศ Modern Travel Blog ที่คุณต้องหลงรัก
+      </p>
+
+      <!-- Hero Fast Stats Cards -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-3xl mx-auto pt-2 pb-2">
+        <div class="p-3.5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 shadow-sm text-left">
+          <div class="text-2xl font-black text-sky-300 font-display">7 จุด</div>
+          <div class="text-xs text-slate-300 font-medium">ไฮไลต์ห้ามพลาด</div>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 shadow-sm text-left">
+          <div class="text-2xl font-black text-emerald-300 font-display">100+ ปี</div>
+          <div class="text-xs text-slate-300 font-medium">ประเพณี & สถาปัตย์</div>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 shadow-sm text-left">
+          <div class="text-2xl font-black text-amber-300 font-display">1 วัน</div>
+          <div class="text-xs text-slate-300 font-medium">เที่ยวครบทุกอารมณ์</div>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 shadow-sm text-left">
+          <div class="text-2xl font-black text-rose-300 font-display">2568</div>
+          <div class="text-xs text-slate-300 font-medium">ตลาดใหม่น่าเดิน</div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+        <a 
+          href="#attractions" 
+          class="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-sky-500 hover:bg-sky-400 text-white font-bold text-base shadow-lg shadow-sky-500/30 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
+        >
+          <span>สำรวจ 7 สถานที่ท่องเที่ยว</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+          </svg>
+        </a>
+        <a 
+          href="#itinerary" 
+          class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-white/15 hover:bg-white/25 text-white font-semibold text-base backdrop-blur-md border border-white/30 transition-all flex items-center justify-center gap-2"
+        >
+          <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+          </svg>
+          <span>ดูแผนการเที่ยว 1 วัน</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Floating scroll indicator -->
+    <a href="#attractions" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/60 hover:text-white transition flex flex-col items-center gap-1 text-xs">
+      <span>เลื่อนลงเพื่อดูเนื้อหา</span>
+      <div class="w-5 h-9 rounded-full border-2 border-white/30 flex items-start justify-center p-1">
+        <div class="w-1.5 h-2 bg-white rounded-full animate-bounce"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ==================== SEARCH & FILTER SECTION ==================== -->
+  <section id="filter-bar" class="sticky top-20 z-30 py-4 bg-slate-50/95 backdrop-blur-md border-b border-slate-200/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        
+        <!-- Filter Tabs -->
+        <div class="flex items-center gap-1.5 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 scrollbar-none">
+          <button 
+            data-filter="all" 
+            class="filter-tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-sky-600 text-white shadow-md"
+          >
+            ทั้งหมด (7)
+          </button>
+          <button 
+            data-filter="temple" 
+            class="filter-tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-white text-slate-600 hover:bg-slate-50 border border-slate-200"
+          >
+            🛕 วัดและโบราณสถาน
+          </button>
+          <button 
+            data-filter="landmark" 
+            class="filter-tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-white text-slate-600 hover:bg-slate-50 border border-slate-200"
+          >
+            🌉 แลนด์มาร์คและถ่ายรูป
+          </button>
+          <button 
+            data-filter="community" 
+            class="filter-tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-white text-slate-600 hover:bg-slate-50 border border-slate-200"
+          >
+            🍲 วิถีชีวิตและอาหาร
+          </button>
+          <button 
+            data-filter="history" 
+            class="filter-tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-white text-slate-600 hover:bg-slate-50 border border-slate-200"
+          >
+            🏛️ ประวัติศาสตร์
+          </button>
+          <button 
+            data-filter="favorites" 
+            class="filter-tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-white text-rose-600 hover:bg-rose-50 border border-rose-200"
+          >
+            ❤️ ที่บันทึกไว้
+          </button>
+        </div>
+
+        <!-- Search Input -->
+        <div class="relative w-full md:w-80">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="ค้นหาชื่อวัด, ถ้ำ, อาหาร, สะพาน..." 
+            class="w-full pl-10 pr-9 py-2 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-sm placeholder-slate-400 transition"
+          />
+          <button 
+            id="search-clear-btn" 
+            style="display: none;" 
+            class="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600"
+            title="ล้างคำค้นหา"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTENT GRID SECTION ==================== -->
+  <main id="attractions" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- Section Title & Counter -->
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 pb-4 border-b border-slate-200">
+      <div>
+        <div class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 bg-sky-100 px-3 py-1 rounded-full mb-2">
+          <span>DESTINATION HIGHLIGHTS</span>
+        </div>
+        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-slate-900">
+          สถานที่ท่องเที่ยว 7 แห่งที่ต้องไปเยือน
+        </h2>
+        <p class="text-slate-500 text-sm mt-1">
+          คลิกที่ปุ่ม <span class="font-semibold text-sky-600">"อ่านเพิ่มเติม"</span> เพื่อดูรายละเอียดประวัติ ภาพ และข้อมูลนำทางแบบเจาะลึก
+        </p>
+      </div>
+      <div class="mt-4 sm:mt-0 text-sm text-slate-500 font-medium">
+        แสดงผล <span id="result-count" class="font-bold text-slate-800">7 จาก 7 สถานที่</span>
+      </div>
+    </div>
+
+    <!-- 7 Cards Grid Container (Rendered by app.js) -->
+    <div id="attractions-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Loading Placeholder -->
+      <div class="col-span-full py-20 text-center text-slate-400">
+        <div class="animate-spin w-8 h-8 border-4 border-sky-500 border-t-transparent rounded-full mx-auto mb-3"></div>
+        กำลังโหลดข้อมูลสถานที่ท่องเที่ยว...
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==================== 1-DAY TRIP ITINERARY SECTION ==================== -->
+  <section id="itinerary" class="bg-gradient-to-b from-white via-sky-50/40 to-slate-50 py-20 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-100 px-3 py-1 rounded-full">
+          THA WUNG ONE DAY TRIP PLANNER
+        </span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 mt-3 mb-4">
+          แนะนำเส้นทางท่องเที่ยว 1 วัน อำเภอท่าวุ้ง
+        </h2>
+        <p class="text-slate-600 text-base">
+          รวมการเดินทางท่องเที่ยวแบบชิลล์ๆ ครบทั้งไหว้พระ ชมศิลปะ สัมผัสธรรมชาติ และเช็คอินของกินอร่อย 
+          จัดลำดับให้เที่ยวได้สะดวกแบบไม่ย้อนทาง
+        </p>
+      </div>
+
+      <!-- Timeline Steps -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        <!-- Step 1: เช้า -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-lg mb-6 shadow-sm">
+            🌅
+          </div>
+          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">ช่วงเช้า (08:00 - 11:30 น.)</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">กราบพระเสริมสิริมงคลริมน้ำ</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            เริ่มต้นทริปที่ <strong>วัดไลย์</strong> ริมแม่น้ำบางขาม ไหว้ขอพรพระศรีอาริย์ ชมปูนปั้นโบราณ จากนั้นเดินทางขึ้นเขาสมอคอนเพื่อเยือน <strong>วัดเขาสมอคอน</strong> และ <strong>วัดถ้ำตะโก</strong> ชมเรือมรรคสัจจ์
+          </p>
+          <div class="text-xs text-slate-400 font-medium flex items-center gap-2">
+            <span>📍 ไฮไลต์: วัดไลย์ • วัดเขาสมอคอน • วัดถ้ำตะโก</span>
+          </div>
+        </div>
+
+        <!-- Step 2: บ่าย -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-lg mb-6 shadow-sm">
+            ☀️
+          </div>
+          <div class="text-xs font-bold text-sky-600 uppercase tracking-wider mb-1">ช่วงบ่าย (12:30 - 16:00 น.)</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">รอยอดีตเมืองละโว้ & โพหวี</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            เรียนรู้ประวัติศาสตร์การตั้งรกรากของอำเภอที่ <strong>ที่ว่าการอำเภอโพหวี</strong> ก่อนไปกราบหลวงพ่อนาคปรกศิลาทรายยุคขอม ณ <strong>วัดมุจลินท์</strong> จุดยิงสลุดรับเสด็จในอดีต
+          </p>
+          <div class="text-xs text-slate-400 font-medium flex items-center gap-2">
+            <span>📍 ไฮไลต์: ที่ว่าอำเภอโพหวี • วัดมุจลินท์</span>
+          </div>
+        </div>
+
+        <!-- Step 3: เย็น -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center font-bold text-lg mb-6 shadow-sm">
+            🌆
+          </div>
+          <div class="text-xs font-bold text-rose-600 uppercase tracking-wider mb-1">ช่วงเย็นถึงค่ำ (16:30 - 19:30 น.)</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">เช็คอินสะพานแดง & ตะลุยชิม</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            เดินรับลมชมพระอาทิตย์ตกดินและถ่ายรูปสวยๆ บน <strong>สะพานแดงท่าวุ้ง</strong> พร้อมรอชมไฟประดับยามค่ำ จากนั้นแวะชิมของอร่อยและซื้อของฝากที่ <strong>ตลาดสดเทศบาลท่าวุ้ง</strong> โฉมใหม่
+          </p>
+          <div class="text-xs text-slate-400 font-medium flex items-center gap-2">
+            <span>📍 ไฮไลต์: สะพานแดงท่าวุ้ง • ตลาดสดเทศบาลท่าวุ้ง</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== TRAVEL INFO & TIPS SECTION ==================== -->
+  <section id="travel-info" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-xl">
+      <!-- Decorative background blur blobs -->
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-sky-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">
+            TRAVEL GUIDE & TIPS
+          </span>
+          <h2 class="font-display font-black text-2xl sm:text-4xl text-white mt-2 mb-4 leading-tight">
+            การเดินทางไปยังอำเภอท่าวุ้ง จังหวัดลพบุรี
+          </h2>
+          <p class="text-slate-300 leading-relaxed text-sm sm:text-base font-light mb-6">
+            อำเภอท่าวุ้งอยู่ห่างจากตัวเมืองลพบุรีเพียงประมาณ 12–15 กิโลเมตร และห่างจากกรุงเทพฯ ประมาณ 130 กิโลเมตร สามารถเดินทางด้วยรถยนต์ส่วนตัวผ่านทางหลวงหมายเลข 311 (ลพบุรี–สิงห์บุรี) สะดวกสบาย ใช้เวลาเดินทางเพียง 1.5 - 2 ชั่วโมงจากกรุงเทพฯ
+          </p>
+
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold">🚗</span>
+              <span class="text-sm text-slate-200">รถยนต์ส่วนตัว: ใช้สายเอเชีย (AH2) หรือถนนพหลโยธิน มุ่งหน้าลพบุรี ต่อด้วย ทล.311</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">🚌</span>
+              <span class="text-sm text-slate-200">รถโดยสารประจำทาง: รถตู้/มินิบัส กรุงเทพฯ-ลพบุรี หรือ กรุงเทพฯ-สิงห์บุรี แวะลงท่าวุ้ง</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">☀️</span>
+              <span class="text-sm text-slate-200">ฤดูกาลแนะนำ: สามารถเที่ยวได้ตลอดปี โดยเฉพาะช่วงปลายฝนต้นหนาวและช่วงงานเทศกาล</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-white/15">
+          <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
+            <span>✨</span> เคล็ดลับการท่องเที่ยวท่าวุ้ง
+          </h3>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 mt-0.5">✓</span>
+              <span><strong>แต่งกายสุภาพ:</strong> การเข้าชมวัดโบราณและพระวิหารควรสวมใส่เสื้อผ้าเรียบร้อย สุภาพ</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 mt-0.5">✓</span>
+              <span><strong>ช่วงเวลาถ่ายรูปสะพานแดง:</strong> เวลา 17:30 น. เป็นต้นไป จะได้ชมแสงทไวไลท์และไฟประดับสวยงาม</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 mt-0.5">✓</span>
+              <span><strong>ของฝากต้องลอง:</strong> ขนมไทยโบราณที่ตลาดสดเทศบาล และปลาน้ำจืดสดจากแม่น้ำบางขาม</span>
+            </li>
+          </ul>
+
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-slate-400">พิกัดศูนย์กลางอำเภอ: ท่าวุ้ง ลพบุรี</span>
+            <a 
+              href="https://www.google.com/maps/place/Tha+Wung+District,+Lopburi" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="text-xs font-semibold text-sky-400 hover:text-sky-300 underline"
+            >
+              ดูแผนที่รวมใน Google Maps →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-white border-t border-slate-200 py-12 text-slate-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-sky-600 flex items-center justify-center text-white font-bold">
+            ท
+          </div>
+          <div>
+            <div class="font-display font-bold text-slate-900">7 สถานที่ท่องเที่ยวอำเภอท่าวุ้ง จังหวัดลพบุรี</div>
+            <div class="text-xs text-slate-400">Modern Travel Blog • ออกแบบและพัฒนาเพื่อส่งเสริมการท่องเที่ยวชุมชน</div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+          <a href="#hero" class="hover:text-sky-600 transition">หน้าแรก</a>
+          <a href="#attractions" class="hover:text-sky-600 transition">สถานที่ท่องเที่ยว</a>
+          <a href="#itinerary" class="hover:text-sky-600 transition">แผนเที่ยว 1 วัน</a>
+          <a href="#travel-info" class="hover:text-sky-600 transition">การเดินทาง</a>
+        </div>
+
+        <div class="text-xs text-slate-400 text-center md:text-right">
+          © 2026 Tha Wung Travel Blog. สงวนลิขสิทธิ์ทั้งหมด
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== INTERACTIVE MODAL DIALOG ==================== -->
+  <div 
+    id="detail-modal" 
+    class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 hidden opacity-0 transition-opacity duration-300"
+    role="dialog" 
+    aria-modal="true"
+  >
+    <!-- Modal Backdrop Blur -->
+    <div class="modal-backdrop fixed inset-0 bg-slate-950/70 backdrop-blur-md"></div>
+
+    <!-- Modal Card Window -->
+    <div class="modal-container relative w-full max-w-3xl max-h-[90vh] bg-white rounded-3xl overflow-y-auto shadow-2xl z-10 transform scale-95 transition-transform duration-300 scrollbar-thin">
+      <!-- Dynamic Content Loaded by JS -->
+      <div id="modal-dynamic-content">
+        <!-- Content will be injected by app.js openModal() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== BOOKMARK FAVORITES DRAWER ==================== -->
+  <div id="drawer-overlay" class="fixed inset-0 bg-slate-950/50 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <aside 
+    id="bookmark-drawer" 
+    class="fixed top-0 right-0 h-full w-full max-w-md bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col"
+  >
+    <!-- Drawer Header -->
+    <div class="p-5 border-b border-slate-100 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-rose-500 text-xl">❤️</span>
+        <h3 class="font-display font-bold text-lg text-slate-900">สถานที่ที่คุณบันทึกไว้</h3>
+      </div>
+      <button id="close-drawer-btn" class="w-8 h-8 rounded-full hover:bg-slate-100 text-slate-500 flex items-center justify-center transition">
+        ✕
+      </button>
+    </div>
+
+    <!-- Drawer Body -->
+    <div id="drawer-bookmark-list" class="p-5 flex-1 overflow-y-auto space-y-3">
+      <!-- Injected by app.js -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="p-5 border-t border-slate-100 bg-slate-50">
+      <button 
+        onclick="closeBookmarkDrawer()" 
+        class="w-full py-2.5 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-sm font-semibold transition"
+      >
+        ปิดหน้าต่าง
+      </button>
+    </div>
+  </aside>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
