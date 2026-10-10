@@ -9,13 +9,24 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Prompt', 'Kanit', sans-serif;
+  font-family: 'Prompt', 'Sarabun', -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background-color: var(--color-bg-soft);
   color: #1e293b;
   overflow-x: hidden;
+  line-height: 1.7;
+}
+
+.font-body {
+  font-family: 'Sarabun', 'Prompt', sans-serif;
+}
+
+.font-display {
+  font-family: 'Kanit', 'Prompt', sans-serif;
 }
 
 /* Custom Scrollbar */
@@ -108,6 +119,19 @@ body {
 /* Card hover glow */
 .group:hover {
   border-color: rgba(14, 165, 233, 0.25);
+}
+
+/* Enhanced Card Typography */
+article {
+  word-break: break-word;
+}
+
+article h3 {
+  letter-spacing: -0.01em;
+}
+
+article p {
+  letter-spacing: 0.005em;
 }
 
 /* Print Friendly */

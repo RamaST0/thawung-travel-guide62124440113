@@ -295,47 +295,54 @@ function renderAttractions() {
           </div>
         </div>
 
-        <!-- เนื้อหาภายในการ์ด -->
-        <div class="p-6 flex-1 flex flex-col justify-between">
+        <!-- เนื้อหาภายในการ์ด (จัดระเบียบข้อความให้อ่านง่าย สบายตา) -->
+        <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-white">
           <div>
             <!-- หัวข้อชื่อสถานที่ -->
-            <h3 class="text-xl font-bold text-slate-900 group-hover:text-sky-600 transition-colors line-clamp-1 mb-1">
+            <h3 class="font-display text-xl sm:text-[22px] font-bold text-slate-900 group-hover:text-sky-600 transition-colors leading-snug mb-2 line-clamp-1">
               ${item.title}
             </h3>
             
-            <p class="text-xs text-slate-400 font-medium mb-3 line-clamp-1">
-              ${item.originalName}
-            </p>
+            <!-- ป้ายชื่อเดิม / ประวัติย่อ (อ่านง่าย ไม่จม) -->
+            <div class="mb-3.5">
+              <span class="inline-flex items-center gap-1.5 text-xs font-medium text-sky-800 bg-sky-50 px-2.5 py-1 rounded-lg border border-sky-100 max-w-full">
+                <span class="text-sky-600 font-bold shrink-0">📜</span>
+                <span class="truncate">${item.originalName}</span>
+              </span>
+            </div>
 
-            <!-- คำบรรยายสั้นๆ สรุปจุดเด่น -->
-            <p class="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-3">
+            <!-- คำบรรยายสรุปจุดเด่น (ฟอนต์ Sarabun อ่านสบายตา เว้นระยะบรรทัดพอดี) -->
+            <p class="font-body text-slate-600 text-sm sm:text-[15px] leading-[1.8] mb-4 line-clamp-3 text-left">
               ${item.shortExcerpt}
             </p>
 
-            <!-- ข้อมูลย่อ (Chips) -->
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span class="inline-flex items-center text-xs text-slate-500 bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-100">
-                <svg class="w-3.5 h-3.5 mr-1 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                </svg>
-                ${item.location}
+            <!-- กล่องสรุปไฮไลต์สำคัญประจำสถานที่ -->
+            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-100 mb-5 flex items-start gap-2.5">
+              <span class="text-amber-500 text-sm font-bold shrink-0 mt-0.5">✨</span>
+              <p class="font-body text-xs sm:text-[13px] text-slate-700 font-medium leading-relaxed line-clamp-2">
+                <span class="font-semibold text-slate-900 font-display">ไฮไลต์:</span> ${item.highlights[0]}
+              </p>
+            </div>
+
+            <!-- ป้ายข้อมูลย่อ (พิกัด & เวลาแนะนำ) -->
+            <div class="flex flex-wrap items-center gap-2 mb-6">
+              <span class="inline-flex items-center gap-1.5 text-xs text-slate-700 bg-slate-50 px-2.5 py-1.5 rounded-xl border border-slate-200/60 font-medium font-body">
+                <span class="text-emerald-500">📍</span>
+                <span class="truncate">${item.location}</span>
               </span>
-              <span class="inline-flex items-center text-xs text-slate-500 bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-100">
-                <svg class="w-3.5 h-3.5 mr-1 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                ${item.recommendedTime.split('(')[0].trim()}
+              <span class="inline-flex items-center gap-1.5 text-xs text-slate-700 bg-slate-50 px-2.5 py-1.5 rounded-xl border border-slate-200/60 font-medium font-body">
+                <span class="text-sky-500">⏰</span>
+                <span>${item.recommendedTime.split('(')[0].trim()}</span>
               </span>
             </div>
           </div>
 
-          <!-- แถบปุ่ม Action -->
+          <!-- แถบปุ่ม Action ท้ายการ์ด -->
           <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-3">
             <!-- ปุ่มอ่านเพิ่มเติม เปิด Modal -->
             <button 
               onclick="openModal(${item.id})" 
-              class="flex-1 py-2.5 px-4 bg-sky-50 hover:bg-sky-600 text-sky-700 hover:text-white font-semibold text-sm rounded-xl transition-all duration-200 flex items-center justify-center gap-2 group/btn shadow-sm hover:shadow"
+              class="flex-1 py-2.5 px-4 bg-sky-600 hover:bg-sky-700 active:bg-sky-800 text-white font-medium text-sm rounded-xl transition-all duration-200 flex items-center justify-center gap-2 group/btn shadow-sm hover:shadow-md"
             >
               <span>อ่านเพิ่มเติม</span>
               <svg class="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -554,7 +561,7 @@ function openModal(id) {
           </svg>
           ข้อมูลและประวัติความเป็นมา
         </h3>
-        <p class="text-slate-700 leading-relaxed text-base sm:text-lg font-light text-justify">
+        <p class="font-body text-slate-700 leading-[1.85] text-base sm:text-[17px] font-normal text-left tracking-normal">
           ${item.fullDescription}
         </p>
       </div>

@@ -11,10 +11,10 @@
   <meta property="og:title" content="7 สถานที่ท่องเที่ยวอำเภอท่าวุ้ง จังหวัดลพบุรี">
   <meta property="og:description" content="เที่ยวท่าวุ้ง สัมผัสวัฒนธรรม ริมน้ำบางขาม ประวัติศาสตร์ และของอร่อย">
   
-  <!-- Google Fonts: Prompt & Kanit -->
+  <!-- Google Fonts: Prompt, Kanit & Sarabun for maximum Thai readability -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Prompt:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -23,8 +23,9 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Prompt', 'sans-serif'],
-            display: ['Kanit', 'sans-serif']
+            sans: ['Prompt', 'Sarabun', 'sans-serif'],
+            display: ['Kanit', 'Prompt', 'sans-serif'],
+            body: ['Sarabun', 'Prompt', 'sans-serif']
           },
           colors: {
             brand: {
